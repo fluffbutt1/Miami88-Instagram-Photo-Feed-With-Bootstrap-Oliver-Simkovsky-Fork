@@ -21,34 +21,80 @@
         <a class="navbar-brand" href="#"
           ><i class="fa-brands fa-instagram"></i>Instagram</a
         >
-        <div class="collapse navbar-collapse d-flex" id="navbarNav" >
-          
-            <button class="btn btn-success ms-auto">Create a new post</button>
-          
-          
-            <!-- Settings dropdown menu -->
-            <div class="btn-group d-flex align-items-right">
-              <button type="button" class="btn btn-outline-secondary">
-                <i class="fa-solid fa-gear"></i>
-              </button>
-              <button
-                type="button"
-                class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <span class="visually-hidden">Toggle Dropdown</span>
-              </button>
-              <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li><a class="dropdown-item" href="#">Accsssibility</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Privacy and Data</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
-              </ul>
+        <div class="collapse navbar-collapse d-flex" id="navbarNav">
+          <!-- <button class="btn btn-success ms-auto">Create a new post</button> -->
+
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-success ms-auto"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Create a new post
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Modal title
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">...</div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <!-- Settings dropdown menu -->
+          <div class="btn-group d-flex align-items-right">
+            <button type="button" class="btn btn-outline-secondary">
+              <i class="fa-solid fa-gear"></i>
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accsssibility</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Privacy and Data</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
